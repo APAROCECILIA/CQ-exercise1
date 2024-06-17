@@ -3,41 +3,67 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Exercise</title>
+    <title>Form</title>
 
-   
+ <style>
+        body {
+        font-family: 'Arial', sans-serif;
+        background-color: #f8e1f4;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        margin: 0;
+    }
+
+    form {
+        background: linear-gradient(135deg, #a4508b, #5f0a87);
+        border-radius: 10px;
+        padding: 20px;
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+        width: 300px;
+        color: white;
+    }
+
+    form label {
+        font-weight: bold;
+        margin-bottom: 5px;
+        display: block;
+        font-size: 14px;
+    }
+
+    form input[type="text"],
+    form input[type="email"],
+    form input[type="password"] {
+        width: calc(100% - 10px);
+        padding: 10px;
+        margin-bottom: 15px;
+        border: 1px solid #ddd;
+        border-radius: 5px;
+        background-color: #fff;
+        color: #333;
+        font-size: 14px;
+    }
+
+    form input[type="submit"] {
+        background-color: #ff69b4;
+        border: none;
+        border-radius: 5px;
+        padding: 10px 20px;
+        color: white;
+        font-size: 16px;
+        cursor: pointer;
+        transition: background-color 0.3s ease;
+    }
+
+    form input[type="submit"]:hover {
+        background-color: #ff1493;
+    }
+</style>
 </head>
-<h1>TABLE</h1>
 <body>
-    <table border="1">
-        <tr>
-            <th>Name</th>
-            <th>Email Address</th>
-        </tr>
-        <tr>
-            <td>John Doe</td>
-            <td>john.doe@example.com</td>
-        </tr>
-        <tr>
-            <td>Jane Smith</td>
-            <td>jane.smith@example.com</td>
-        </tr>
-        <tr>
-            <td>Emily Johnson</td>
-            <td>emily.johnson@example.com</td>
-        </tr>
-        <tr>
-            <td>Michael Brown</td>
-            <td>michael.brown@example.com</td>
-        </tr>
-        <tr>
-            <td>Sarah Davis</td>
-            <td>sarah.davis@example.com</td>
-        </tr>
-    </table>
-    
-    <br>
-    <h1>FORM</h1>
+
+    <h1><bold>FORM</bold></h1>
 
     <form action="/submit_registration" method="post">
         <label for="firstName">First Name:</label><br>
@@ -56,9 +82,8 @@
     </form>
 
 
+<h2>This takes you to the table <a href="table.html">TABLE</a></h2>
 
-
-  
     
 </body>
 </html>
